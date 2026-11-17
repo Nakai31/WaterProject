@@ -1,0 +1,336 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    /* background-color: #0077b6; */
+    background: linear-gradient(to bottom, black, #077, #0076b6cb);
+    color: rgba(255, 255, 255, 0.9);
+    font-family: "Poppins";
+}
+
+button{
+    font-family: "Poppins";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+    border: none;
+    font-size: 16px;
+    opacity: .8;
+    transition: all .3s;
+    cursor: pointer;
+    transition: transform 0.5s ease-in-out 0s;
+}
+
+h2:hover{
+    cursor: pointer;
+    color: white;
+    transition: all .3;
+}
+
+button:hover{
+    transform: scale(1.05);
+    opacity: 1;
+}
+
+p{
+    font-size: 16px;
+    font-weight: 300;
+    opacity: 0.7;
+}
+
+a{
+    color: white;
+    opacity: .7;
+    transition: all .3s;
+    text-decoration: none;
+}
+
+a:hover{
+    opacity: 1;
+}
+
+header{
+    width: 100%;
+    display: flex;
+    padding: 4%;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 99;
+}
+
+.logotipo{
+    width: 60px;
+    transition: transform 0.5s ease-in-out 0s;
+}
+
+.logotipo:hover{
+    transform: scale(1.05);
+}
+
+header nav{
+    transition: transform 0.5s ease-in-out 0s;
+}
+
+header nav ul{
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 16px 20px;
+    border-radius: 12px;
+    backdrop-filter: blur(20px);
+}
+
+nav:hover{
+    transform: scale(1.05);
+}
+
+section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 4%;
+}
+
+.secao1{
+    background-image: url(assets/sime-basioli-BRkikoNP0KQ-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+
+    h2{
+        font-size: 8vw;
+        color: rgb(120, 119, 119);
+        mix-blend-mode: color-dodge;
+    }
+
+}
+
+.ContPrincipal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    p{
+        text-align: center;
+    }
+
+    h1{
+        text-align: center;
+        font-size: 40px;
+        font-weight: 500;
+        margin-bottom: 12px;
+    }
+
+    a{
+
+        width: fit-content;
+        height: fit-content;
+        border: 40px;
+        padding: 0px 16px;
+        margin-top: 28px;
+        font-size: small;
+        button{
+            width: 30vw;
+            height: 5vh;
+
+        }
+    }
+}
+
+.TituloSecao{
+    font-size: 60px;
+    font-weight: 500;
+    text-shadow: 0 5px 5px rgba(0, 0, 0, .5);
+}
+
+.secao2{
+    align-items: center;
+
+}
+
+.divCards{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 60px 120px;
+}
+
+.card{
+    width: 32%;
+    padding: 32px 20px;
+    border-radius: 20px;
+    transition: all 0.5s ease-in-out 0s;
+    h3{
+        font-size: 24px;
+        font-weight: 500;
+        margin: 20px 0px 4px;
+    }
+}
+
+.azul{
+    background-color: #02304733;
+    border-radius: 20px;
+}
+
+.card:hover{
+    box-shadow: 0 0 5px rgba(0, 0, 0, .5);
+}
+
+.container{
+    min-width: 60px;
+    max-width: 750px;
+    background-image: url('assets/jong-marshes-79mNMAvSORg-unsplash.jpg');
+    border: none;
+    border-radius: 30px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform .5s ease-in-out 0s;
+
+    &:hover{
+        transform: scale(1.05);
+        box-shadow: 0 0 5px rgba(0, 0, 0, .5);
+        .texto p{
+            opacity: 1;
+        }
+    }
+}
+
+.texto{
+    justify-content: center;
+    margin-left: 20px;
+    width: 50%;
+    height: 70%;
+    border-radius: 20px;
+    text-align: center;
+    font-weight: bolder;
+
+    h3{
+        margin: 10px 5px 5px;
+        font-weight: 500;
+        font-size: 24px;
+    }
+
+    p{
+        padding: 15px;
+        text-indent: 10px;
+        font-size: 20px;
+        text-align: justify;
+    }
+
+    a{
+        width: fit-content;
+        height: fit-content;
+        border-radius: 40px;
+        background-color: rgba(255, 255, 255, 0.909);
+        padding: 0;
+        margin-top: 5px;
+        margin-left: 20px;
+        font-size: small;
+        button{
+            width: 100%;
+            height: 30px;
+            color: black;
+        }
+    }
+}
+
+.card-citacao{
+    background-color: #023047;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 0 5px 5px rgba(206, 107, 14, 0.5);
+    transition: transform 0.5s ease-in-out 0s;
+    img{
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+    }
+
+    &:hover{
+        transform: scale(1.05);
+        box-shadow: 0 5px 5px rgba(206, 107, 14, 0.712);
+        .citacao p{
+            opacity: 1;
+        }
+    }
+}
+
+.citacao{
+    width: 300px;
+    text-align: center;
+    p{
+        padding: 20px;
+        font-size: medium;
+        font-style: italic;
+    }
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+    border-top: 2px solid #b98c0edc;
+    background: linear-gradient(to bottom, #021847, black);
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s;
+}
+
+footer:hover{
+    border-top: 2.5px solid #b98b0e;
+}
+
+.rodape{
+    margin-top: 10px;
+    width: 40vw;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.705);
+
+    h3{
+        font-size: 1.2vw;
+        font-weight: 500;
+        font-style: italic;
+    }
+
+    p{
+        font-style: italic;
+        font-size: 1vw;
+    }
+}
+
+.midia{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    width: 2vw;
+    height: 2vh;
+    img{
+        width: 100%;
+        transition: all .5s ease-in-out 0s;
+        &:hover{
+            transform: translateY(-4px) scale(1.05);
+        }
+    }
+}

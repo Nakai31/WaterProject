@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WaterProject</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+
+        body{
+            width: 100vw;
+            height: 100vh;
+            background: url(./assets/background-login.jpg);
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container{
+            width: 420px;
+            background-color: transparent;
+            border: 2px solid rgba(255, 255, 255, .2);
+            border-radius: 10px;
+            color: #fff;
+            padding: 30px 40px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+            backdrop-filter: blur(50px);
+        }
+
+        .container h1{
+            font-size: 36px;
+            text-align: center;
+        }
+
+        .input-box{
+            width: 100%;
+            height: 50px;
+            margin: 30px 0;
+        }
+
+        .input-box input{
+            width: 100%;
+            height: 50%;
+            background-color: transparent;
+            border: 2px solid rgba(255, 255, 255, .2);
+            border-radius: 40px;
+            outline: none;
+            font-size: 16px;
+            color: white;
+            padding: 20px 45px 20px 20px ;
+            transition: transform 0.5s ease-in-out 0s;
+        }
+
+        .input-box input::placeholder{
+            color: white;
+        }
+
+        .input-box input:hover{
+            transform: scale(1.1);
+        }
+
+        .lembrar-esquecer{
+            display: flex;
+            justify-content: space-between;
+            margin: -15px 0 15px;
+        }
+
+        .lembrar-esquecer label input{
+            margin-right: 5px;
+        }
+
+        .lembrar-esquecer a{
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .lembrar-esquecer a:hover{
+            text-decoration: underline;
+        }
+
+        button{
+            margin-top: 20px;
+            width: 100%;
+            height: 50px;
+            background-color: white;
+            border: none;
+            border-radius: 40px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 600;
+            box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+            text-decoration: none;
+            transition: transform .5s ease-in-out 0s;
+            text-decoration: none;
+            color:#0077b6;
+            opacity: .7;
+            
+        }
+
+        button:hover{
+            background-color: transparent;
+            border: 2px solid rgba(255, 255, 255, .2);
+            color: white;
+            transform: scale(1.05);
+
+        }
+
+        .cadastro{
+            margin: 20px 0 15px;
+            font-size: 14px;
+            text-align: center;
+        }
+
+        .cadastro a{
+            text-decoration: none;
+            color: #fff;
+            font-weight: 500;
+        }
+
+        .cadastro a:hover{
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <main class="container">
+        <form action="index.html">
+            <h1>Login WaterProject</h1>
+
+            <div class="input-box">
+                <input type="email" required placeholder="E-mail">
+            </div>
+
+            <div class="input-box">
+                <input type="password" required placeholder="Senha">
+            </div>
+
+            <div class="lembrar-esquecer">
+                <label><input type="checkbox">Lembre de mim</label>
+                <a href="#">Esqueci minha senha</a>
+            </div>
+            
+            <button type="submit">Entrar</button>
+            <div class="cadastro">
+                <p>Não possui uma conta? <a href="#">Cadastre-se</a></p>
+            </div>
+        </form>
+    </main>
+</body>
+</html>
